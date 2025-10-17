@@ -17,11 +17,13 @@ _Stretch goal:_
 ## Todo:
 
 <li>E Key Input</li>
+<li>Fish shadows swimming under the surface, and watering spots</li>
 
 # Rogi
 <li>Fishing mechanic</li>
 
 # Lyz
-<li>Bring the art back in</li>
 <li>Add first person character</li>
-<li>Reimplement base stuff esp to support Rogi's fishing mechanic</li>
+<li>Bring the art back in</li>
+<li>implement basic gampelay states</li>
+<li>Casting the line</li>

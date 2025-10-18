@@ -28,3 +28,15 @@ _Stretch goal:_
 <li>Bring the art back in</li>
 <li>implement basic gampelay states</li>
 <li>Casting the line</li>
+
+# Special Thanks
+### Phlip (3)
+### Fleakuda (10)
+### Qworco (3)
+
+# For Future Reference
+## How to fork and clone for collabs:
+<li>(On web) Fork arrow dropdown --> "Create New Fork" --> Create Fork</li>
+<li>(In your new fork on web) Click green "Code" button --> "Open in GitHub Desktop"</li>
+<li>When prompted, choose "To contribute to the parent project" --> "Continue"</li>
+<li>When you're ready to commit changes, do so, and make a Pull Request on GitHub Web, on the original Repo's page.</li>

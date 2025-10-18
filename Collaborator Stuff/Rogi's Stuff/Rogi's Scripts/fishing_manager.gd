@@ -4,6 +4,11 @@ class_name FishingManager extends Node
 
 static var ref: FishingManager
 
+enum FISHING_RESULTS {
+	SUCCESS,
+	FAIL
+}
+
 const ANGLER_1 = preload("uid://6rycvarcb1q")
 const ANGLER_2 = preload("uid://c65cbh5efqxdp")
 const ANGLER_3 = preload("uid://bl43n03s0c55f")
@@ -39,6 +44,8 @@ var _line_tension_percent : float = 0:
 	set(val):
 		if _line_tension_percent == val:
 			return
+		if val > 109.0:
+			end_fishing(FISHING_RESULTS.FAIL)
 		_line_tension_percent = clamp(val, 0.0, 110.0)
 
 var _current_fish: Fish:
@@ -117,8 +124,13 @@ func update_line_tension(delta):
 	else: #both pulling
 		_line_tension_percent += TENSION_INCREASE_RATE * _current_fish.size * delta * BOTH_PULLING_STRENGTH
 
-func end_fishing() -> void: 
+func end_fishing(fishing_result: FISHING_RESULTS) -> void: 
 	set_is_fishing(false)
+	match fishing_result: 
+		FISHING_RESULTS.SUCCESS:
+			Globals.fish_collection.append(_current_fish)
+		FISHING_RESULTS.FAIL:
+			pass
 
 func _process(delta):
 	if Input.is_action_just_pressed("DebugFishing"):

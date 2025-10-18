@@ -12,3 +12,17 @@ offset_right = 735.0
 offset_bottom = 226.0
 theme_override_font_sizes/font_size = 151
 step = 5.0
+
+[node name="FishPullingPlaceholder" type="Label" parent="."]
+offset_top = 242.0
+offset_right = 88.0
+offset_bottom = 265.0
+theme_override_font_sizes/font_size = 31
+text = "Fish Pulling"
+
+[node name="PlayerPullingPlaceholder" type="Label" parent="."]
+offset_top = 303.0
+offset_right = 105.0
+offset_bottom = 326.0
+theme_override_font_sizes/font_size = 31
+text = "Player Pulling"

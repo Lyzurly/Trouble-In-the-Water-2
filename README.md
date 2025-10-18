@@ -28,3 +28,20 @@ _Stretch goal:_
 <li>Bring the art back in</li>
 <li>implement basic gampelay states</li>
 <li>Casting the line</li>
+
+# Special Thanks
+### Phlip (3)
+### Fleakudo (2)
+
+
+
+
+
+
+
+
+
+
+
+
+

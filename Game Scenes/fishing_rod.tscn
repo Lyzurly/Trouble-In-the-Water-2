@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmpv271imw6a4"]
+
+[ext_resource type="PackedScene" uid="uid://d0b0i8stwro4h" path="res://Blend Files/fishing rod.blend" id="1_3nwhn"]
+[ext_resource type="PackedScene" uid="uid://dl75beufk5r6a" path="res://Game Scenes/fishling_line.tscn" id="2_gks7h"]
+
+[node name="fishing rod" instance=ExtResource("1_3nwhn")]
+
+[node name="Plane" parent="." index="0"]
+transform = Transform3D(0.215, 0, 0, 0, 0.215, 0, 0, 0, 0.215, 0, 0, 0)
+
+[node name="fishing_line" type="Node3D" parent="." index="1"]
+
+[node name="Skeleton3D" type="Skeleton3D" parent="fishing_line" index="0"]
+
+[node name="PhysicalBone3D" type="PhysicalBone3D" parent="fishing_line/Skeleton3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4, 0)
+joint_offset = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.4, 0)
+body_offset = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4, 0)
+
+[node name="fishling line" parent="fishing_line" index="1" instance=ExtResource("2_gks7h")]
+transform = Transform3D(0.8660254, -0.5, 0, 0.5, 0.8660254, 0, 0, 0, 1, -0.040723115, 1.4401257, 0)
+visible = false

@@ -1,0 +1,15 @@
+[gd_resource type="Environment" load_steps=2 format=3 uid="uid://543w65n4ck1c"]
+
+[ext_resource type="Sky" uid="uid://4x4bdpie4vii" path="res://Sky/sky_1.tres" id="1_vdvch"]
+
+[resource]
+background_mode = 2
+sky = ExtResource("1_vdvch")
+tonemap_mode = 2
+fog_enabled = true
+fog_light_color = Color(0.3248323, 0.3540753, 0.39957383, 1)
+fog_light_energy = 0.22
+fog_density = 0.0012
+fog_sky_affect = 0.604
+fog_height = 54.13
+fog_height_density = -16.0

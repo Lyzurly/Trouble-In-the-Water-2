@@ -1,18 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://j4xhi7awgb4h"]
+[gd_scene load_steps=9 format=3 uid="uid://j4xhi7awgb4h"]
 
-[ext_resource type="PackedScene" uid="uid://u67tf0u16hpx" path="res://Game Scenes/player.tscn" id="1_x35fq"]
-
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_x35fq"]
-sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
-ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
-
-[sub_resource type="Sky" id="Sky_fvjgy"]
-sky_material = SubResource("ProceduralSkyMaterial_x35fq")
-
-[sub_resource type="Environment" id="Environment_8kgx1"]
-background_mode = 2
-sky = SubResource("Sky_fvjgy")
-tonemap_mode = 2
+[ext_resource type="PackedScene" uid="uid://u67tf0u16hpx" path="res://Game Scenes/player.tscn" id="1_maudf"]
+[ext_resource type="PackedScene" uid="uid://ekvda7p53db4" path="res://Game Scenes/environment.tscn" id="2_rck1s"]
 
 [sub_resource type="Gradient" id="Gradient_fvjgy"]
 offsets = PackedFloat32Array(0, 0.46721312)
@@ -36,14 +25,7 @@ size = Vector2(1000, 1000)
 
 [node name="Lyz\'s Scene" type="Node3D"]
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_8kgx1")
-
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
-shadow_enabled = true
-
-[node name="Player" parent="." instance=ExtResource("1_x35fq")]
+[node name="Player" parent="." instance=ExtResource("1_maudf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7180083, 0)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
@@ -55,3 +37,5 @@ skeleton = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 shape = SubResource("WorldBoundaryShape3D_x35fq")
+
+[node name="Environment" parent="." instance=ExtResource("2_rck1s")]

@@ -12,8 +12,8 @@ const JOY_LOOK_SCALAR: float = 9.
 var input_dir: Vector2
 var direction: Vector3
 
-const SPEED_DEFAULT: float = 3.6
-const SPEED_SPRINT: float = 5.
+const SPEED_DEFAULT: float = 5.5
+const SPEED_SPRINT: float = 7.
 const JUMP_VELOCITY: float = 4.5
 
 var speed: float = SPEED_DEFAULT

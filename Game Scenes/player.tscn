@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://u67tf0u16hpx"]
+[gd_scene load_steps=6 format=3 uid="uid://u67tf0u16hpx"]
 
 [ext_resource type="Script" uid="uid://cjc55a7mp4qwx" path="res://Scripts/player.gd" id="1_s54xe"]
 [ext_resource type="Script" uid="uid://34qlu7u1qei7" path="res://Scripts/playerhead.gd" id="2_i8tjs"]
+[ext_resource type="PackedScene" uid="uid://cmpv271imw6a4" path="res://Game Scenes/fishing_rod.tscn" id="3_i8tjs"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_s54xe"]
 
@@ -17,6 +18,9 @@ script = ExtResource("2_i8tjs")
 
 [node name="Camera3D" type="Camera3D" parent="Head"]
 unique_name_in_owner = true
+
+[node name="fishing rod" parent="Head" instance=ExtResource("3_i8tjs")]
+transform = Transform3D(0.9862856, 0.05237037, -0.15651855, 0, 0.94832367, 0.31730464, 0.1650476, -0.312953, 0.935318, 0.88, -0.73, -1.16)
 
 [node name="PlayerCapsule" type="MeshInstance3D" parent="."]
 unique_name_in_owner = true

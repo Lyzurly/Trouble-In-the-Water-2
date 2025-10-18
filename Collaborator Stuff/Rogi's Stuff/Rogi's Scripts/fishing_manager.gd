@@ -39,7 +39,7 @@ var _line_tension_percent : float = 0:
 	set(val):
 		if _line_tension_percent == val:
 			return
-		_line_tension_percent = clamp(val, 0.0, 100.0)
+		_line_tension_percent = clamp(val, 0.0, 110.0)
 
 var _current_fish: Fish:
 	get:

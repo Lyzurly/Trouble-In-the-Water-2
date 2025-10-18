@@ -21,6 +21,15 @@ var _line_tension_percent : float = 0:
 			return
 		_line_tension_percent = clamp(val, 0.0, 100.0)
 
+var _current_fish: int = 0:
+	get:
+		return _current_fish
+	set(val):
+		if _current_fish == val:
+			return
+		_current_fish = val
+		
+
 func get_line_tension_percent():
 	return _line_tension_percent
 
@@ -34,8 +43,10 @@ func set_is_fishing(truth_value: bool) -> void:
 	_is_fishing = truth_value
 
 func start_finshing() -> void:
-	_set_line_tension_percent(0.0)
-	_is_fishing = false
+	_set_line_tension_percent(50.0)
+	_is_fishing = true
+
+func end_fishing() -> Dictionary: 
 	
 
 func _process(_delta):

@@ -78,7 +78,7 @@ func block_movement(block:bool) -> void:
 		Print.debug_print("Movement BLOCKED!")
 	else:
 		Print.debug_print("Movement unblocked.")
-	
+
 func block_activation(block:bool) -> void:
 	_activation_blocked = block
 	if block:
@@ -110,10 +110,12 @@ func _handle_movement(delta:float) -> void:
 			
 	input_dir = Input.get_vector("Left", "Right", "Forward", "Backward")
 	direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
-	if direction and not _movement_blocked:
+	if direction:
 		velocity.x = direction.x * speed
+		velocity.z = direction.z * speed
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED_DEFAULT)
+		velocity.x = move_toward(velocity.x, 0, speed)
+		velocity.z = move_toward(velocity.z, 0, speed)
 		
 	move_and_slide()
 

@@ -39,4 +39,6 @@ _Stretch goal:_
 <li>(On web) Fork arrow dropdown --> "Create New Fork" --> Create Fork</li>
 <li>(In your new fork on web) Click green "Code" button --> "Open in GitHub Desktop"</li>
 <li>When prompted, choose "To contribute to the parent project" --> "Continue"</li>
-<li>When you're ready to commit changes, do so, and make a Pull Request on GitHub Web, on the original Repo's page.</li>
+<li>In GitHub Desktop, rename your main branch to something else (eg main-YOURNAME)</li>
+<li>If/when there are changes to pull from the original repo, in GitHub Desktop click "Fetch origin/main", then "Branch" (in the top toolbar) --> "Update from Main" (CTRL + SHIFT + U)</li>
+<li>When you're ready to commit and push changes, do so, then click "Branch" --> "Create Pull Request" (CTRL + R) <i><-- Needs Testing</i> or just make a Pull Request on GitHub Web from your fork's repo in the first place instead.</li>

@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Trouble in the water 2"
+run/main_scene="uid://bsmvib0o6fle"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 

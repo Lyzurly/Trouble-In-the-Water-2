@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dwsqlopt1rlpr"]
+
+[ext_resource type="Script" uid="uid://dbi5tfpxjir08" path="res://Collaborator Stuff/Rogi's Stuff/Rogi's Scripts/fishing_manager.gd" id="1_yt2wd"]
+
+[node name="FishingManager" type="Node"]
+script = ExtResource("1_yt2wd")

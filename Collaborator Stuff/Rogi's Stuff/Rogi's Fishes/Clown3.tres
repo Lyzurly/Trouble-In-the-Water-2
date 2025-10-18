@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Fish" load_steps=3 format=3 uid="uid://djv25joaornnp"]
+
+[ext_resource type="SphereMesh" uid="uid://dhvlni5sg20go" path="res://Collaborator Stuff/Rogi's Stuff/Rogi's Meshes/placeholder_sphere.tres" id="1_dodgo"]
+[ext_resource type="Script" uid="uid://cip3gn642uoa7" path="res://Collaborator Stuff/Rogi's Stuff/Rogi's Scripts/fish_resource.gd" id="1_q4vr3"]
+
+[resource]
+script = ExtResource("1_q4vr3")
+mesh = ExtResource("1_dodgo")
+size = 3
+color = Color(0, 0, 0.3019608, 1)
+metadata/_custom_type_script = "uid://cip3gn642uoa7"

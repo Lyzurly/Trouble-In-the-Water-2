@@ -1,0 +1,16 @@
+[gd_scene load_steps=5 format=3 uid="uid://f3tp7dbu42j4"]
+
+[ext_resource type="PackedScene" uid="uid://u67tf0u16hpx" path="res://Game Scenes/player.tscn" id="1_ua6xa"]
+[ext_resource type="PackedScene" uid="uid://bi0c2e7kl414a" path="res://Game Scenes/level.tscn" id="2_2tbwb"]
+[ext_resource type="PackedScene" uid="uid://dwsqlopt1rlpr" path="res://Collaborator Scenes/Rogi's Scenes/fishing_manager.tscn" id="3_6dw60"]
+[ext_resource type="PackedScene" uid="uid://ohs2rmyauyho" path="res://Collaborator Scenes/Rogi's Scenes/fishing_game_bar.tscn" id="4_x8b6y"]
+
+[node name="Rogi\'s Scene" type="Node3D"]
+
+[node name="Player" parent="." instance=ExtResource("1_ua6xa")]
+
+[node name="Level" parent="." instance=ExtResource("2_2tbwb")]
+
+[node name="FishingManager" parent="." instance=ExtResource("3_6dw60")]
+
+[node name="FishingGameBar" parent="." instance=ExtResource("4_x8b6y")]

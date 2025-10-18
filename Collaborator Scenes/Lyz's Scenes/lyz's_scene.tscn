@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://j4xhi7awgb4h"]
+[gd_scene load_steps=10 format=3 uid="uid://j4xhi7awgb4h"]
 
 [ext_resource type="PackedScene" uid="uid://u67tf0u16hpx" path="res://Game Scenes/player.tscn" id="1_maudf"]
+[ext_resource type="PackedScene" uid="uid://cmpv271imw6a4" path="res://Game Scenes/fishing_rod.tscn" id="2_oh2kg"]
 [ext_resource type="PackedScene" uid="uid://ekvda7p53db4" path="res://Game Scenes/environment.tscn" id="2_rck1s"]
 
 [sub_resource type="Gradient" id="Gradient_fvjgy"]
@@ -28,6 +29,9 @@ size = Vector2(1000, 1000)
 [node name="Player" parent="." instance=ExtResource("1_maudf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7180083, 0)
 
+[node name="fishing rod2" parent="Player/Head" index="0" instance=ExtResource("2_oh2kg")]
+transform = Transform3D(0.9862856, 0.05237037, -0.15651855, 0, 0.94832367, 0.31730464, 0.1650476, -0.312953, 0.935318, 0.88, -0.73, -1.16)
+
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
@@ -39,3 +43,5 @@ skeleton = NodePath("../..")
 shape = SubResource("WorldBoundaryShape3D_x35fq")
 
 [node name="Environment" parent="." instance=ExtResource("2_rck1s")]
+
+[editable path="Player"]

@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dre1n3b480eou"
-path="res://.godot/imported/fishling line.blend-9e9a17b73ea21eae4f665213eaa933dd.scn"
+uid="uid://d11p0lyj6shcn"
+path="res://.godot/imported/fishing line.blend-bd4d86b81d575e8152baa00f11f40f94.scn"
 
 [deps]
 
-source_file="res://Blend Files/fishling line.blend"
-dest_files=["res://.godot/imported/fishling line.blend-9e9a17b73ea21eae4f665213eaa933dd.scn"]
+source_file="res://Blend Files/fishing line.blend"
+dest_files=["res://.godot/imported/fishing line.blend-bd4d86b81d575e8152baa00f11f40f94.scn"]
 
 [params]
 
@@ -18,7 +18,7 @@ nodes/root_name=""
 nodes/root_script=null
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
-nodes/import_as_skeleton_bones=false
+nodes/import_as_skeleton_bones=true
 nodes/use_name_suffixes=true
 nodes/use_node_type_suffixes=true
 meshes/ensure_tangents=true

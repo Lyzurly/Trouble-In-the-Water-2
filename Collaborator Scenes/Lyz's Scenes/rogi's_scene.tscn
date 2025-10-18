@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://u73unop6nkyr"]
+
+[ext_resource type="PackedScene" uid="uid://u67tf0u16hpx" path="res://Game Scenes/player.tscn" id="1_cmw8p"]
+[ext_resource type="PackedScene" uid="uid://bi0c2e7kl414a" path="res://Game Scenes/level.tscn" id="2_nhfbb"]
+
+[node name="Rogi\'s Scene" type="Node3D"]
+
+[node name="Player" parent="." instance=ExtResource("1_cmw8p")]
+
+[node name="Level" parent="." instance=ExtResource("2_nhfbb")]

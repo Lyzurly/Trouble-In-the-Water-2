@@ -13,6 +13,7 @@ var input_dir: Vector2
 var direction: Vector3
 
 const SPEED_DEFAULT: float = 3.6
+const SPEED_SPRINT: float = 5.
 const JUMP_VELOCITY: float = 4.5
 
 var speed: float = SPEED_DEFAULT
@@ -105,6 +106,11 @@ func _handle_looking(event: InputEvent) -> void:
 		_rotate_player(mouse_pos)
 
 func _handle_movement(delta:float) -> void:
+	if Input.is_action_pressed("Sprint"):
+		speed = SPEED_SPRINT
+	else:
+		speed = SPEED_DEFAULT
+	
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 			

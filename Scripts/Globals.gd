@@ -5,3 +5,5 @@ enum COLLISIONS {
 	GROUND = 1,
 	LAKE = 2
 }
+
+var fish_collection: Array

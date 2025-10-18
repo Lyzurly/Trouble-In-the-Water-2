@@ -15,7 +15,7 @@ _Stretch goal:_
 <li>InstaFish has other fishers on it, and their numbers gradually increase either over time or as you get further?</li>
 <li>A shop to sell fish? and buy traps maybe for catching even the monster.</li>
 
-## Todo:
+<!-- ## Todo:
 
 <li>E Key Input</li>
 <li>Fish shadows swimming under the surface, and watering spots</li>
@@ -27,7 +27,7 @@ _Stretch goal:_
 <li>Add first person character</li>
 <li>Bring the art back in</li>
 <li>implement basic gampelay states</li>
-<li>Casting the line</li>
+<li>Casting the line</li> -->
 
 # Special Thanks
 ### Phlip (3)

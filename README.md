@@ -13,6 +13,7 @@ _Stretch goal:_ And become number one on InstaFish!
 _Stretch goal:_
 <li>And also displayed/catalogued on "InstaFish" social media site</li>
 <li>InstaFish has other fishers on it, and their numbers gradually increase either over time or as you get further?</li>
+<li>A shop to sell fish? and buy traps maybe for catching even the monster.</li>
 
 ## Todo:
 

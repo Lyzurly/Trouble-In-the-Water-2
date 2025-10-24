@@ -10,7 +10,9 @@ _Stretch goal:_ And become number one on InstaFish!
 <li>If the player is caught, they're knocked down, and a random number/assortment of fish are eaten in their house, and the names/numbers of losses are display on screen as text.
 <li>Fish can be displayed in a player "home", along with how many in nearby crates</li>
 
-_Stretch goal:_
+_Stretch goals:_
+<li>Can throw bait to lure the big monster away
+<li>All fish go after bait, Monster chases after the bait faster than other fish
 <li>And also displayed/catalogued on "InstaFish" social media site</li>
 <li>InstaFish has other fishers on it, and their numbers gradually increase either over time or as you get further?</li>
 <li>A shop to sell fish? and buy traps maybe for catching even the monster.</li>
@@ -33,6 +35,7 @@ _Stretch goal:_
 ### Phlip (3)
 ### Fleakuda (10)
 ### Qworco (3)
+### blitza.r (1)
 
 # For Future Reference
 ## How to fork and clone for collabs:

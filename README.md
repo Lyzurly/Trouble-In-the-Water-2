@@ -11,9 +11,12 @@ _Stretch goal:_ And become number one on InstaFish!
 <li>Fish can be displayed in a player "home", along with how many in nearby crates</li>
 
 _Stretch goals:_
+## 1 - Bait
 <li>Can throw bait to lure the big monster away
 <li>All fish go after bait, Monster chases after the bait faster than other fish
-<li>And also displayed/catalogued on "InstaFish" social media site</li>
+
+## 2 - InstaFish
+<li>Fish could be displayed/catalogued on "InstaFish" social media site</li>
 <li>InstaFish has other fishers on it, and their numbers gradually increase either over time or as you get further?</li>
 <li>A shop to sell fish? and buy traps maybe for catching even the monster.</li>
 
@@ -36,6 +39,7 @@ _Stretch goals:_
 ### Fleakuda (10)
 ### Qworco (3)
 ### blitza.r (1)
+### Bartsss
 
 # For Future Reference
 ## How to fork and clone for collabs:

@@ -1,5 +1,8 @@
-[gd_scene load_steps=14 format=4 uid="uid://d4fsv5oq8hcjt"]
+[gd_scene load_steps=17 format=4 uid="uid://d4fsv5oq8hcjt"]
 
+[ext_resource type="PackedScene" uid="uid://ekvda7p53db4" path="res://Game Scenes/environment.tscn" id="1_anikp"]
+[ext_resource type="PackedScene" uid="uid://u67tf0u16hpx" path="res://Game Scenes/player.tscn" id="2_bipw8"]
+[ext_resource type="PackedScene" uid="uid://cmpv271imw6a4" path="res://Game Scenes/fishing_rod.tscn" id="3_fhwqq"]
 [ext_resource type="Script" uid="uid://bixd7hfrv182r" path="res://Scripts/level.gd" id="4_8xbc1"]
 [ext_resource type="Texture2D" uid="uid://bswlhkiwiwn7s" path="res://Blend Files/textures/Untitled.png" id="5_hvm0d"]
 [ext_resource type="Material" path="res://Materials/lake.tres" id="6_d15nq"]
@@ -73,6 +76,14 @@ size = Vector2(100, 100)
 
 [node name="Main Game" type="Node3D"]
 
+[node name="Environment" parent="." instance=ExtResource("1_anikp")]
+
+[node name="Player" parent="." instance=ExtResource("2_bipw8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.067238, 0.8251717, 0)
+
+[node name="fishing rod2" parent="Player/Head" index="0" instance=ExtResource("3_fhwqq")]
+transform = Transform3D(0.9862856, 0.05237037, -0.15651855, 0, 0.94832367, 0.31730464, 0.1650476, -0.312953, 0.935318, 0.88, -0.73, -1.16)
+
 [node name="Level" type="Node3D" parent="."]
 script = ExtResource("4_8xbc1")
 
@@ -100,3 +111,5 @@ shape = SubResource("SphereShape3D_i38fq")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Level/Lake"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.2460332, 0)
 mesh = SubResource("PlaneMesh_jf6yi")
+
+[editable path="Player"]

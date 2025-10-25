@@ -1,6 +1,6 @@
 class_name Fish extends Resource
 
-@export var mesh: Mesh
+@export var fish_scene: PackedScene
 @export var size: int
-@export var color: Color
+@export var hue_shift: float
 @export var name: String

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Fish" load_steps=3 format=3 uid="uid://djv25joaornnp"]
+
+[ext_resource type="PackedScene" uid="uid://bem6nbd3r1ri2" path="res://Collaborator Stuff/Rogi's Stuff/Rogi's Fish Scenes/clownfish_mesh.tscn" id="1_asjdf"]
+[ext_resource type="Script" uid="uid://cip3gn642uoa7" path="res://Collaborator Stuff/Rogi's Stuff/Rogi's Scripts/fish_resource.gd" id="2_kcqwm"]
+
+[resource]
+script = ExtResource("2_kcqwm")
+fish_scene = ExtResource("1_asjdf")
+size = 3
+hue_shift = 210.0
+name = "Clownfish (big)"
+metadata/_custom_type_script = "uid://cip3gn642uoa7"

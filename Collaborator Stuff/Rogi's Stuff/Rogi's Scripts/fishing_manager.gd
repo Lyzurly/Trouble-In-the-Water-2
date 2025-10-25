@@ -67,9 +67,8 @@ var _fish_distance: float:
 	set(val):
 		if _fish_distance == val:
 			return
-		if _fish_distance < 0.5:
+		if val < 0.5:
 			end_fishing(FISHING_RESULTS.SUCCESS)
-			fishing_success.emit()
 		_fish_distance = clamp(val, 0.0, 200.0)
 
 var _current_fish: Fish:
@@ -132,7 +131,7 @@ func start_finshing() -> void:
 		set_current_fish(random_fish)
 		set_line_tension_percent(50.0)
 		set_fish_distance(randf_range(INITIAL_FISH_DISTANCE - INITIAL_FISH_DISTANCE_MARGIN, INITIAL_FISH_DISTANCE + INITIAL_FISH_DISTANCE_MARGIN))
-	set_is_fishing(true)
+		set_is_fishing(true)
 
 
 func toggle_is_fish_pulling():
@@ -168,15 +167,15 @@ func update_fish_distance(delta):
 	var neither_pulling: bool = !Input.is_action_pressed("DebugFishing") and !get_is_fish_pulling()
 	var player_only_pulling: bool = Input.is_action_pressed("DebugFishing") and !get_is_fish_pulling()
 	var fish_only_pulling: bool = !Input.is_action_pressed("DebugFishing") and get_is_fish_pulling()
-	
-	if neither_pulling:
-		return
-	elif player_only_pulling:
-		_fish_distance -= PLAYER_PULL_STRENGTH * delta
-	elif fish_only_pulling:
-		_fish_distance +=  FISH_PULL_STRENGTH * delta
-	else:
-		_fish_distance -= (PLAYER_PULL_STRENGTH - FISH_PULL_STRENGTH) * delta
+	if _is_fishing:
+		if neither_pulling:
+			return
+		elif player_only_pulling:
+			_fish_distance -= PLAYER_PULL_STRENGTH * delta
+		elif fish_only_pulling:
+			_fish_distance +=  FISH_PULL_STRENGTH * delta
+		else:
+			_fish_distance -= (PLAYER_PULL_STRENGTH - FISH_PULL_STRENGTH) * delta
 
 func end_fishing(fishing_result: FISHING_RESULTS) -> void: 
 	set_is_fishing(false)

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Fish" load_steps=3 format=3 uid="uid://g3dul4ka1edg"]
+
+[ext_resource type="PackedScene" uid="uid://ir1pqywagv5d" path="res://Collaborator Stuff/Rogi's Stuff/Rogi's Fish Scenes/puffer_mesh.tscn" id="1_833ii"]
+[ext_resource type="Script" uid="uid://cip3gn642uoa7" path="res://Collaborator Stuff/Rogi's Stuff/Rogi's Scripts/fish_resource.gd" id="2_hredj"]
+
+[resource]
+script = ExtResource("2_hredj")
+fish_scene = ExtResource("1_833ii")
+size = 2
+hue_shift = 60.0
+name = "Puffer (normal)"
+metadata/_custom_type_script = "uid://cip3gn642uoa7"

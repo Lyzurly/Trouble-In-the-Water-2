@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Fish" load_steps=3 format=3 uid="uid://c65cbh5efqxdp"]
+
+[ext_resource type="PackedScene" uid="uid://dpvrji71ag5q7" path="res://Collaborator Stuff/Rogi's Stuff/Rogi's Fish Scenes/angler_mesh.tscn" id="1_uuvuw"]
+[ext_resource type="Script" uid="uid://cip3gn642uoa7" path="res://Collaborator Stuff/Rogi's Stuff/Rogi's Scripts/fish_resource.gd" id="2_qg08y"]
+
+[resource]
+script = ExtResource("2_qg08y")
+fish_scene = ExtResource("1_uuvuw")
+size = 2
+hue_shift = 60.0
+name = "Angler (normal)"
+metadata/_custom_type_script = "uid://cip3gn642uoa7"

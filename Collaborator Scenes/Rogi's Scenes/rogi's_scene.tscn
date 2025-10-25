@@ -1,13 +1,38 @@
-[gd_scene load_steps=4 format=3 uid="uid://f3tp7dbu42j4"]
+[gd_scene load_steps=9 format=3 uid="uid://f3tp7dbu42j4"]
 
+[ext_resource type="Script" uid="uid://dabqc0axjkujv" path="res://Collaborator Stuff/Rogi's Stuff/Rogi's Scripts/rogi's_scene.gd" id="1_ua6xa"]
 [ext_resource type="PackedScene" uid="uid://bi0c2e7kl414a" path="res://Game Scenes/level.tscn" id="2_2tbwb"]
 [ext_resource type="PackedScene" uid="uid://dwsqlopt1rlpr" path="res://Collaborator Scenes/Rogi's Scenes/fishing_manager.tscn" id="3_6dw60"]
 [ext_resource type="PackedScene" uid="uid://ohs2rmyauyho" path="res://Collaborator Scenes/Rogi's Scenes/fishing_game_bar.tscn" id="4_x8b6y"]
+[ext_resource type="PackedScene" uid="uid://u67tf0u16hpx" path="res://Game Scenes/player.tscn" id="5_2tbwb"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ua6xa"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_2tbwb"]
+sky_material = SubResource("ProceduralSkyMaterial_ua6xa")
+
+[sub_resource type="Environment" id="Environment_6dw60"]
+background_mode = 2
+sky = SubResource("Sky_2tbwb")
+tonemap_mode = 2
 
 [node name="Rogi\'s Scene" type="Node3D"]
+script = ExtResource("1_ua6xa")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_6dw60")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
 
 [node name="Level" parent="." instance=ExtResource("2_2tbwb")]
 
 [node name="FishingManager" parent="." instance=ExtResource("3_6dw60")]
 
 [node name="FishingGameBar" parent="." instance=ExtResource("4_x8b6y")]
+
+[node name="Player" parent="." instance=ExtResource("5_2tbwb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0925918, 24.548471)

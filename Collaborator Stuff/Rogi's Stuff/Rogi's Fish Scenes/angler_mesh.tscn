@@ -1,0 +1,16 @@
+[gd_scene load_steps=5 format=3 uid="uid://dpvrji71ag5q7"]
+
+[ext_resource type="PackedScene" uid="uid://dgyfeciqg88f0" path="res://Blend Files/Fish/Imports/angler_mesh.blend" id="1_kl4p6"]
+[ext_resource type="Shader" uid="uid://5c5ivcr0ff3h" path="res://Collaborator Stuff/Rogi's Stuff/Rogi's Scripts/Shaders/hue_shift.gdshader" id="2_xf1bs"]
+[ext_resource type="Texture2D" uid="uid://dy4w3jn77opx4" path="res://Blend Files/Fish/textures/AnglerFish.png" id="3_fqd0d"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fqd0d"]
+render_priority = 0
+shader = ExtResource("2_xf1bs")
+shader_parameter/shift_amount = 0.0
+shader_parameter/base_albedo = ExtResource("3_fqd0d")
+
+[node name="angler_mesh" instance=ExtResource("1_kl4p6")]
+
+[node name="Cube" parent="." index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_fqd0d")

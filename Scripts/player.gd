@@ -56,9 +56,14 @@ func change_state(new_state: player_states) -> void:
 func _input(event: InputEvent) -> void:
 	if Player.ref == null:
 		return
+
+	if OS.is_debug_build():
+		if Input.is_action_just_pressed("Restart"):
+			get_tree().reload_current_scene()
 	
 	if not player_state == player_states.FROZEN:
 		_handle_looking(event)
+			
 		
 		if Input.is_action_just_pressed("Activate"):
 			Print.debug_print("Activate key pressed...")

@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://f0wtkkguuqwy"]
+
+[resource]
+transparency = 1
+uv1_scale = Vector3(1, 0.9, 1)
+disable_receive_shadows = true

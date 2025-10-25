@@ -847,9 +847,9 @@ skeleton = NodePath("")
 shape = SubResource("ConvexPolygonShape3D_gbnnh")
 
 [node name="Cylinder_015" type="PhysicalBone3D" parent="Skeleton3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 1.06198673e-13, 0, -1.06198673e-13, 1, 3.4924597e-10, 2.4581401, -1.4663311e-07)
+transform = Transform3D(1, 0, 0, 0, 1, 1.05894284e-13, 0, -1.05894284e-13, 1, 3.4924597e-10, 2.4581401, -1.4663311e-07)
 joint_type = 3
-body_offset = Transform3D(1, 0, 0, 0, 1, -3.827437e-16, 0, 3.827437e-16, 1, 0, 0, 0)
+body_offset = Transform3D(1, 0, 0, 0, 1, -6.8713346e-16, 0, 6.8713346e-16, 1, 0, 0, 0)
 bone_name = "Cylinder.015"
 joint_constraints/angular_limit_enabled = true
 joint_constraints/angular_limit_upper = 90.0
@@ -866,9 +866,9 @@ skeleton = NodePath("")
 shape = SubResource("ConvexPolygonShape3D_hm0jk")
 
 [node name="Cylinder_014" type="PhysicalBone3D" parent="Skeleton3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 9.9093246e-14, 0, -9.9093246e-14, 1, 3.4924597e-10, 2.2881398, -1.3650029e-07)
+transform = Transform3D(1, 0, 0, 0, 1, 9.8788856e-14, 0, -9.8788856e-14, 1, 3.4924597e-10, 2.2881398, -1.3650029e-07)
 joint_type = 3
-body_offset = Transform3D(1, 0, 0, 0, 1, -3.827437e-16, 0, 3.827437e-16, 1, 0, 0, 0)
+body_offset = Transform3D(1, 0, 0, 0, 1, -6.8713346e-16, 0, 6.8713346e-16, 1, 0, 0, 0)
 bone_name = "Cylinder.014"
 joint_constraints/angular_limit_enabled = true
 joint_constraints/angular_limit_upper = 90.0
@@ -885,9 +885,9 @@ skeleton = NodePath("")
 shape = SubResource("ConvexPolygonShape3D_15ybs")
 
 [node name="Cylinder_013" type="PhysicalBone3D" parent="Skeleton3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 9.198782e-14, 0, -9.198782e-14, 1, 3.4924597e-10, 2.1181395, -1.2636745e-07)
+transform = Transform3D(1, 0, 0, 0, 1, 9.168343e-14, 0, -9.168343e-14, 1, 3.4924597e-10, 2.1181395, -1.2636745e-07)
 joint_type = 3
-body_offset = Transform3D(1, 0, 0, 0, 1, -3.827437e-16, 0, 3.827437e-16, 1, 0, 0, 0)
+body_offset = Transform3D(1, 0, 0, 0, 1, -6.8713346e-16, 0, 6.8713346e-16, 1, 0, 0, 0)
 bone_name = "Cylinder.013"
 joint_constraints/angular_limit_enabled = true
 joint_constraints/angular_limit_upper = 90.0
@@ -904,9 +904,9 @@ skeleton = NodePath("")
 shape = SubResource("ConvexPolygonShape3D_8x23i")
 
 [node name="Cylinder_012" type="PhysicalBone3D" parent="Skeleton3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 8.488239e-14, 0, -8.488239e-14, 1, 3.4924597e-10, 1.9481393, -1.1623464e-07)
+transform = Transform3D(1, 0, 0, 0, 1, 8.4578e-14, 0, -8.4578e-14, 1, 3.4924597e-10, 1.9481393, -1.1623464e-07)
 joint_type = 3
-body_offset = Transform3D(1, 0, 0, 0, 1, -3.827437e-16, 0, 3.827437e-16, 1, 0, 0, 0)
+body_offset = Transform3D(1, 0, 0, 0, 1, -6.8713346e-16, 0, 6.8713346e-16, 1, 0, 0, 0)
 bone_name = "Cylinder.012"
 joint_constraints/angular_limit_enabled = true
 joint_constraints/angular_limit_upper = 90.0
@@ -995,9 +995,9 @@ skeleton = NodePath("")
 shape = SubResource("ConvexPolygonShape3D_10dej")
 
 [node name="Cylinder_007" type="PhysicalBone3D" parent="Skeleton3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 4.9546623e-14, 0, -4.9546623e-14, 1, 3.4924597e-10, 1.0981382, -6.5570575e-08)
+transform = Transform3D(1, 0, 0, 0, 1, 4.9394428e-14, 0, -4.9394428e-14, 1, 3.4924597e-10, 1.0981382, -6.5570575e-08)
 joint_type = 3
-body_offset = Transform3D(1, 0, 0, 0, 1, -1.9137185e-16, 0, 1.9137185e-16, 1, 0, 0, 0)
+body_offset = Transform3D(1, 0, 0, 0, 1, -3.4356673e-16, 0, 3.4356673e-16, 1, 0, 0, 0)
 bone_name = "Cylinder.007"
 joint_constraints/angular_limit_enabled = true
 joint_constraints/angular_limit_upper = 90.0
@@ -1014,9 +1014,9 @@ skeleton = NodePath("")
 shape = SubResource("ConvexPolygonShape3D_8oedw")
 
 [node name="Cylinder_006" type="PhysicalBone3D" parent="Skeleton3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 4.2441196e-14, 0, -4.2441196e-14, 1, 3.4924597e-10, 0.9281382, -5.543778e-08)
+transform = Transform3D(1, 0, 0, 0, 1, 4.2289e-14, 0, -4.2289e-14, 1, 3.4924597e-10, 0.9281382, -5.543778e-08)
 joint_type = 3
-body_offset = Transform3D(1, 0, 0, 0, 1, -1.9137185e-16, 0, 1.9137185e-16, 1, 0, 0, 0)
+body_offset = Transform3D(1, 0, 0, 0, 1, -3.4356673e-16, 0, 3.4356673e-16, 1, 0, 0, 0)
 bone_name = "Cylinder.006"
 joint_constraints/angular_limit_enabled = true
 joint_constraints/angular_limit_upper = 90.0
@@ -1069,9 +1069,9 @@ skeleton = NodePath("")
 shape = SubResource("ConvexPolygonShape3D_ldxuj")
 
 [node name="Cylinder_003" type="PhysicalBone3D" parent="Skeleton3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 2.1220598e-14, 0, -2.1220598e-14, 1, 3.4924597e-10, 0.41813806, -2.5039391e-08)
+transform = Transform3D(1, 0, 0, 0, 1, 2.11445e-14, 0, -2.11445e-14, 1, 3.4924597e-10, 0.41813806, -2.5039391e-08)
 joint_type = 3
-body_offset = Transform3D(1, 0, 0, 0, 1, -9.5685924e-17, 0, 9.5685924e-17, 1, 0, 0, 0)
+body_offset = Transform3D(1, 0, 0, 0, 1, -1.7178336e-16, 0, 1.7178336e-16, 1, 0, 0, 0)
 bone_name = "Cylinder.003"
 joint_constraints/angular_limit_enabled = true
 joint_constraints/angular_limit_upper = 90.0

@@ -1,11 +1,13 @@
-[gd_scene load_steps=17 format=4 uid="uid://d4fsv5oq8hcjt"]
+[gd_scene load_steps=21 format=4 uid="uid://d4fsv5oq8hcjt"]
 
 [ext_resource type="PackedScene" uid="uid://ekvda7p53db4" path="res://Game Scenes/environment.tscn" id="1_anikp"]
 [ext_resource type="PackedScene" uid="uid://u67tf0u16hpx" path="res://Game Scenes/player.tscn" id="2_bipw8"]
 [ext_resource type="PackedScene" uid="uid://cmpv271imw6a4" path="res://Game Scenes/fishing_rod.tscn" id="3_fhwqq"]
 [ext_resource type="Script" uid="uid://bixd7hfrv182r" path="res://Scripts/level.gd" id="4_8xbc1"]
 [ext_resource type="Texture2D" uid="uid://bswlhkiwiwn7s" path="res://Blend Files/textures/Untitled.png" id="5_hvm0d"]
-[ext_resource type="Material" path="res://Materials/lake.tres" id="6_d15nq"]
+[ext_resource type="PackedScene" uid="uid://bd55ckn4n2hfv" path="res://Game Scenes/shadow_below_fish.tscn" id="7_hvm0d"]
+[ext_resource type="Shader" uid="uid://bos77hsd6h02v" path="res://Shaders/water.gdshader" id="7_iw6ea"]
+[ext_resource type="Texture2D" uid="uid://cqvniyt3c27g" path="res://Textures/water.png" id="8_kobqf"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ta66q"]
 resource_name = "Material.001"
@@ -70,9 +72,24 @@ albedo_texture = SubResource("NoiseTexture2D_srh31")
 [sub_resource type="SphereShape3D" id="SphereShape3D_i38fq"]
 radius = 22.545
 
-[sub_resource type="PlaneMesh" id="PlaneMesh_jf6yi"]
-material = ExtResource("6_d15nq")
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_iw6ea"]
+render_priority = 0
+shader = ExtResource("7_iw6ea")
+shader_parameter/slide_speed = 0.3
+shader_parameter/wobble_speed = 1.0
+shader_parameter/wobble_intensity = 0.4
+shader_parameter/texture_scale = 0.2
+shader_parameter/smooth_min = 0.0
+shader_parameter/smooth_max = 0.0001
+shader_parameter/water = ExtResource("8_kobqf")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_kobqf"]
 size = Vector2(100, 100)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_d15nq"]
+top_radius = 0.0
+bottom_radius = 0.63
+height = 1.951
 
 [node name="Main Game" type="Node3D"]
 
@@ -108,8 +125,28 @@ unique_name_in_owner = true
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Level/Lake"]
 shape = SubResource("SphereShape3D_i38fq")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Level/Lake"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.2460332, 0)
-mesh = SubResource("PlaneMesh_jf6yi")
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Level/Lake"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.7, 0)
+material_override = SubResource("ShaderMaterial_iw6ea")
+mesh = SubResource("PlaneMesh_kobqf")
+
+[node name="Node3D" type="Node3D" parent="."]
+
+[node name="shadow_above" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(0.087155715, 0.9961948, 0, -0.9961948, 0.087155715, 0, 0, 0, 1, -17.107956, 0.3, -4.595075)
+visible = false
+cast_shadow = 0
+mesh = SubResource("CylinderMesh_d15nq")
+skeleton = NodePath("../..")
+
+[node name="shadow_below" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(0.087155715, 0.9961948, 0, -0.9961948, 0.087155715, 0, 0, 0, 1, -17.574558, -1.7522343, -3.8452382)
+visible = false
+cast_shadow = 0
+mesh = SubResource("CylinderMesh_d15nq")
+skeleton = NodePath("../..")
+
+[node name="shadow_below_fish" parent="." instance=ExtResource("7_hvm0d")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -17.663, -0.49100018, -3.768)
 
 [editable path="Player"]

@@ -1,16 +1,27 @@
-[gd_scene load_steps=7 format=3 uid="uid://bi0c2e7kl414a"]
+[gd_scene load_steps=9 format=3 uid="uid://bi0c2e7kl414a"]
 
 [ext_resource type="PackedScene" uid="uid://edao07r01ljj" path="res://Game Scenes/ground.tscn" id="1_i38fq"]
 [ext_resource type="Script" uid="uid://bixd7hfrv182r" path="res://Scripts/level.gd" id="1_jf6yi"]
-[ext_resource type="Material" path="res://Materials/lake.tres" id="2_6kwd2"]
+[ext_resource type="Shader" uid="uid://bos77hsd6h02v" path="res://Shaders/water.gdshader" id="3_483t2"]
+[ext_resource type="Texture2D" uid="uid://cqvniyt3c27g" path="res://Textures/water.png" id="4_bw0b4"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_i38fq"]
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_i38fq"]
+[sub_resource type="SphereShape3D" id="SphereShape3D_tultd"]
 radius = 22.545
 
-[sub_resource type="PlaneMesh" id="PlaneMesh_jf6yi"]
-material = ExtResource("2_6kwd2")
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_e5sv0"]
+render_priority = 0
+shader = ExtResource("3_483t2")
+shader_parameter/slide_speed = 0.3
+shader_parameter/wobble_speed = 1.0
+shader_parameter/wobble_intensity = 0.4
+shader_parameter/texture_scale = 0.2
+shader_parameter/smooth_min = 0.0
+shader_parameter/smooth_max = 0.0001
+shader_parameter/water = ExtResource("4_bw0b4")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_2isjp"]
 size = Vector2(100, 100)
 
 [node name="Level" type="Node3D"]
@@ -29,8 +40,9 @@ shape = SubResource("WorldBoundaryShape3D_i38fq")
 unique_name_in_owner = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Lake"]
-shape = SubResource("SphereShape3D_i38fq")
+shape = SubResource("SphereShape3D_tultd")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Lake"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.2460332, 0)
-mesh = SubResource("PlaneMesh_jf6yi")
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Lake"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.7, 0)
+material_override = SubResource("ShaderMaterial_e5sv0")
+mesh = SubResource("PlaneMesh_2isjp")

@@ -99,7 +99,9 @@ height = 1.951
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.067238, 0.8251717, 0)
 
 [node name="fishing rod2" parent="Player/Head" index="0" instance=ExtResource("3_fhwqq")]
+process_mode = 4
 transform = Transform3D(0.9862856, 0.05237037, -0.15651855, 0, 0.94832367, 0.31730464, 0.1650476, -0.312953, 0.935318, 0.88, -0.73, -1.16)
+visible = false
 
 [node name="Level" type="Node3D" parent="."]
 script = ExtResource("4_8xbc1")

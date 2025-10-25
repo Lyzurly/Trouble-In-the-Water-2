@@ -1,17 +1,20 @@
-[gd_scene load_steps=2 format=3 uid="uid://ohs2rmyauyho"]
+[gd_scene load_steps=4 format=3 uid="uid://ohs2rmyauyho"]
 
 [ext_resource type="Script" uid="uid://xvo8iidbtcix" path="res://Collaborator Stuff/Rogi's Stuff/Rogi's Scripts/fishing_game_bar.gd" id="1_ajkfk"]
+[ext_resource type="Texture2D" uid="uid://boeito72cbjva" path="res://Collaborator Stuff/Rogi's Stuff/Rogi's Images/FishingUIBar.png" id="2_isf4h"]
+[ext_resource type="Texture2D" uid="uid://3guul7xmer8f" path="res://Collaborator Stuff/Rogi's Stuff/Rogi's Images/FishingUIBar_fill.png" id="3_h3pqp"]
 
 [node name="FishingGameBar" type="Node2D"]
 script = ExtResource("1_ajkfk")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer"]
+[node name="ProgressBar" type="TextureProgressBar" parent="CanvasLayer"]
 offset_right = 735.0
 offset_bottom = 226.0
-theme_override_font_sizes/font_size = 151
-step = 5.0
+scale = Vector2(0.3, 0.3)
+texture_under = ExtResource("2_isf4h")
+texture_progress = ExtResource("3_h3pqp")
 
 [node name="FishPullingPlaceholder" type="Label" parent="CanvasLayer"]
 visible = false

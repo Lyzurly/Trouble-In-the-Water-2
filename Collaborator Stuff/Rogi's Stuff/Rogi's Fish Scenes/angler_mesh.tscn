@@ -11,6 +11,7 @@ shader_parameter/shift_amount = 0.0
 shader_parameter/base_albedo = ExtResource("3_fqd0d")
 
 [node name="angler_mesh" instance=ExtResource("1_kl4p6")]
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, 0, 0, 0)
 
 [node name="Cube" parent="." index="0"]
 surface_material_override/0 = SubResource("ShaderMaterial_fqd0d")

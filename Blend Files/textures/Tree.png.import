@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1e0fotu3pf5w"
-path.s3tc="res://.godot/imported/Clown.png-aa33d6498e7aca285891e14bed9b129a.s3tc.ctex"
+uid="uid://bhvhgsigm1bhp"
+path.s3tc="res://.godot/imported/Tree.png-298b2b62f59faa9a54c59ee186296f24.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Blend Files/Fish/Imports/textures/Clown.png"
-dest_files=["res://.godot/imported/Clown.png-aa33d6498e7aca285891e14bed9b129a.s3tc.ctex"]
+source_file="res://Blend Files/textures/Tree.png"
+dest_files=["res://.godot/imported/Tree.png-298b2b62f59faa9a54c59ee186296f24.s3tc.ctex"]
 
 [params]
 

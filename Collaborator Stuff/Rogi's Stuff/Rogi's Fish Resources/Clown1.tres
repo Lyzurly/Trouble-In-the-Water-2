@@ -1,11 +1,11 @@
 [gd_resource type="Resource" script_class="Fish" load_steps=3 format=3 uid="uid://c6fsxplx5mo7g"]
 
-[ext_resource type="Script" uid="uid://cip3gn642uoa7" path="res://Collaborator Stuff/Rogi's Stuff/Rogi's Scripts/fish_resource.gd" id="1_3208k"]
-[ext_resource type="SphereMesh" uid="uid://dhvlni5sg20go" path="res://Collaborator Stuff/Rogi's Stuff/Rogi's Meshes/placeholder_sphere.tres" id="1_q3uln"]
+[ext_resource type="PackedScene" uid="uid://bem6nbd3r1ri2" path="res://Collaborator Stuff/Rogi's Stuff/Rogi's Fish Scenes/clownfish_mesh.tscn" id="1_6jhk3"]
+[ext_resource type="Script" uid="uid://cip3gn642uoa7" path="res://Collaborator Stuff/Rogi's Stuff/Rogi's Scripts/fish_resource.gd" id="2_73jc3"]
 
 [resource]
-script = ExtResource("1_3208k")
-mesh = ExtResource("1_q3uln")
+script = ExtResource("2_73jc3")
+fish_scene = ExtResource("1_6jhk3")
 size = 1
-color = Color(0.4, 0, 0, 1)
+name = "Clownfish (mini)"
 metadata/_custom_type_script = "uid://cip3gn642uoa7"

@@ -7,5 +7,5 @@
 script = ExtResource("2_gvleu")
 fish_scene = ExtResource("1_7gl0x")
 size = 1
-hue_shift = 60.0
+name = "Angler (mini)"
 metadata/_custom_type_script = "uid://cip3gn642uoa7"

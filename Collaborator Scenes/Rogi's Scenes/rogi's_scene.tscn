@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bi0c2e7kl414a" path="res://Game Scenes/level.tscn" id="2_2tbwb"]
 [ext_resource type="PackedScene" uid="uid://dwsqlopt1rlpr" path="res://Collaborator Scenes/Rogi's Scenes/fishing_manager.tscn" id="3_6dw60"]
 [ext_resource type="PackedScene" uid="uid://ohs2rmyauyho" path="res://Collaborator Scenes/Rogi's Scenes/fishing_game_bar.tscn" id="4_x8b6y"]
-[ext_resource type="PackedScene" uid="uid://dpvrji71ag5q7" path="res://Collaborator Stuff/Rogi's Stuff/Rogi's Fish Scenes/angler_mesh.tscn" id="5_2tbwb"]
+[ext_resource type="PackedScene" uid="uid://u67tf0u16hpx" path="res://Game Scenes/player.tscn" id="5_2tbwb"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ua6xa"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -34,9 +34,5 @@ shadow_enabled = true
 
 [node name="FishingGameBar" parent="." instance=ExtResource("4_x8b6y")]
 
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7.474186)
-
-[node name="angler_mesh" parent="." instance=ExtResource("5_2tbwb")]
-
-[editable path="angler_mesh"]
+[node name="Player" parent="." instance=ExtResource("5_2tbwb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0925918, 24.548471)

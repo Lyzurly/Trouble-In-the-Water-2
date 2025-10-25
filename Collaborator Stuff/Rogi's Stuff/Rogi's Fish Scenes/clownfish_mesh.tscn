@@ -1,0 +1,16 @@
+[gd_scene load_steps=5 format=3 uid="uid://bem6nbd3r1ri2"]
+
+[ext_resource type="PackedScene" uid="uid://cglskeqafmjwe" path="res://Blend Files/Fish/Imports/clownfish_mesh.blend" id="1_l2kov"]
+[ext_resource type="Shader" uid="uid://5c5ivcr0ff3h" path="res://Collaborator Stuff/Rogi's Stuff/Rogi's Scripts/Shaders/hue_shift.gdshader" id="2_p6ugr"]
+[ext_resource type="Texture2D" uid="uid://bci421h5g72aq" path="res://Blend Files/Fish/textures/Clown.png" id="3_ruhqp"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_83kp0"]
+render_priority = 0
+shader = ExtResource("2_p6ugr")
+shader_parameter/shift_amount = 0.0
+shader_parameter/base_albedo = ExtResource("3_ruhqp")
+
+[node name="clownfish_mesh" instance=ExtResource("1_l2kov")]
+
+[node name="Cube" parent="." index="0"]
+surface_material_override/0 = SubResource("ShaderMaterial_83kp0")
